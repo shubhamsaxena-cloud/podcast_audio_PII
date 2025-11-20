@@ -9,7 +9,10 @@ import json_log_formatter
 from pathlib import Path
 import subprocess
 import time
+import re
 from tenacity import retry, stop_after_attempt, wait_fixed
+
+#this is new comment
 
 # Set up structured JSON logging with rotation
 formatter = json_log_formatter.JSONFormatter()
